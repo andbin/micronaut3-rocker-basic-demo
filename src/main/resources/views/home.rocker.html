@@ -31,5 +31,16 @@ SPDX-License-Identifier: MIT
   </tr>
 </table>
 
+<h2>Netty Versions</h2>
+
+<table class="app-info">
+  @for ((artifactId, version) : appInfo.getNettyVersions()) {
+  <tr>
+    <td class="label">@artifactId</td>
+    <td class="value">@version</td>
+  </tr>
+  }
+</table>
+
 </body>
 </html>
